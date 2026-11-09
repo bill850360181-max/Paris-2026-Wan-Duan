@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>巴黎 2026 万新悦&amp;段昭丞</title>
+<style>
+:root{--bg:#eef1f4;--card:#fff;--ink:#1c2430;--mut:#667386;--line:#d9dfe6;--seine:#b7d3e6;--paper:#f7f4ec;--sign:#0b2a5b;--acc:#0b2a5b}
+@media(prefers-color-scheme:dark){:root{--bg:#0e1520;--card:#17212f;--ink:#e8ecf2;--mut:#93a0b3;--line:#2a3648;--seine:#27465f;--paper:#122030;--sign:#0b2a5b;--acc:#8fb4ff}}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 system-ui,-apple-system,"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+main{max-width:720px;margin:0 auto;padding:14px 14px 40px}
+h2,h3,.hero h1{font-family:"Bodoni 72",Didot,Georgia,"Songti SC","Noto Serif SC",serif}
+h2{font-size:21px;margin:34px 0 12px;letter-spacing:.04em}
+a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}
+.mut{color:var(--mut)}
+.hero{background:var(--sign);color:#fff;border-radius:14px;padding:6px;box-shadow:0 0 0 1px #fff3 inset}
+.hero>div{border:1.5px solid #fffc;border-radius:9px;padding:16px 14px;text-align:center}
+.hero .k{font-size:13px;opacity:.8;letter-spacing:.12em}
+.hero h1{font-size:22px;margin:4px 0 2px;line-height:1.3;font-weight:600}
+.hero p{margin:0;font-size:13px;opacity:.85}
+.cd{display:flex;justify-content:center;gap:8px;margin:14px 0 10px}
+.cd div{background:#fff;color:var(--sign);border-radius:8px;min-width:62px;padding:6px 4px}
+.cd b{display:block;font:700 30px/1.1 ui-monospace,Menlo,monospace}
+.cd span{font-size:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.map{width:100%;height:auto;display:block;background:var(--paper);border-radius:10px;border:1px solid var(--line)}
+.map text{font:9.5px system-ui,"PingFang SC","Noto Sans SC",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3px}
+.lg{display:flex;flex-wrap:wrap;gap:6px 12px;margin:10px 2px 0;font-size:13px}
+.ro{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;color:#fff;font:700 12px/1 system-ui;margin-right:6px;vertical-align:middle}
+.bk{display:grid;gap:10px}
+.bk h4{margin:0 0 4px;font-size:15px}
+.bk .row{display:flex;justify-content:space-between;gap:10px;font-size:14px}
+.day{margin:18px 0}
+.day h3{display:flex;align-items:center;gap:6px;font-size:17px;margin:0 0 8px}
+.day h3 .ro{width:28px;height:28px;font-size:14px;flex:none}
+details.m{margin:0 0 8px}
+details.m summary{cursor:pointer;font-size:14px;color:var(--acc);padding:6px 0}
+.nav{display:inline-block;margin:8px 0 2px;padding:8px 14px;border-radius:999px;background:var(--sign);color:#fff;text-decoration:none;font-size:14px}
+.tl{border-left:3px solid var(--c);margin-left:10px}
+.it{display:grid;grid-template-columns:64px 1fr;gap:8px;padding:8px 0 8px 10px;border-bottom:1px dashed var(--line)}
+.it:last-child{border:0}
+.t{font:600 15px/1.3 ui-monospace,Menlo,monospace;text-align:right}
+.t small{display:block;font:11px/1.3 system-ui,"PingFang SC",sans-serif;color:var(--mut)}
+.it b{font-weight:600}
+.it p{margin:2px 0 0;font-size:13.5px;color:var(--mut)}
+.tag{display:inline-block;margin-left:6px;padding:0 7px;border-radius:999px;background:#d6409f22;color:#c03088;font-size:12px;vertical-align:1px}
+@media(prefers-color-scheme:dark){.tag{color:#ff8fcf}}
+ol.td,ul.tp{margin:0;padding-left:22px}
+ol.td li,ul.tp li{margin:6px 0}
+footer{margin-top:30px;text-align:center;font-size:12px;color:var(--mut)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="rough"><feTurbulence baseFrequency=".04" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter></svg>
+<main>
+<section class="hero"><div>
+<div class="k">此刻关注</div>
+<h1 id="nt">加载中…</h1>
+<p id="nw"></p>
+<div class="cd" id="cd"></div>
+<p id="nl"></p>
+</div></section>
+
+<h2>行程总览</h2>
+<div class="card"><div id="ov"></div><div class="lg" id="lg"></div>
+<p class="mut" style="font-size:13px;margin:10px 0 0">示意图，距离与方位为手绘比例。住宿尚未确定，图中虚线圈为建议区域（Châtelet–Les Halles 一带）。</p></div>
+
+<h2>已确认预订</h2>
+<div class="bk">
+<div class="card"><h4>去程 · 芬兰航空 AY1575</h4>
+<div class="row"><span>12月24日（周四）</span><span>赫尔辛基 12:20 起飞</span></div>
+<div class="row"><span>降落 14:30（巴黎时间）</span><span>戴高乐机场 2B 航站楼</span></div>
+<p class="mut" style="margin:6px 0 0;font-size:13px">Aéroport Paris-Charles de Gaulle, 95700 Roissy-en-France · <a href="https://www.google.com/maps/dir/?api=1&destination=Paris%20Charles%20de%20Gaulle%20Airport%20Terminal%202B">导航</a></p></div>
+<div class="card"><h4>返程 · 芬兰航空 AY1572</h4>
+<div class="row"><span>12月30日（周三）</span><span>戴高乐机场 2B 10:35 起飞</span></div>
+<div class="row"><span>降落 14:30（赫尔辛基时间）</span><span>赫尔辛基-万塔机场</span></div>
+<p class="mut" style="margin:6px 0 0;font-size:13px">建议 08:00 前到达 2B 航站楼，先办退税再托运。</p></div>
+<div class="card mut" style="font-size:14px">酒店、门票、游船等尚未预订，进度见下方待办清单。</div>
+</div>
+
+<h2>逐日行程</h2>
+<p class="mut" style="font-size:13px;margin:0 0 4px">时间默认是巴黎当地时间（冬季 UTC+1）；标注“需预订”的项目要提前订票。点击地点可直接在 Google 地图里开始导航。</p>
+<div id="days"></div>
+
+<h2>待办清单</h2>
+<div class="card"><ol class="td">
+<li>订酒店，建议 Châtelet–Les Halles 一带，选可免费取消的房型</li>
+<li>12月25日迪士尼带日期门票（先看当天是否有票，再决定一个园还是两个园）</li>
+<li>12月26日埃菲尔铁塔登顶或二层定时段票</li>
+<li>12月26日凯旋门登顶时段票</li>
+<li>12月26日晚塞纳河游船票</li>
+<li>12月27日卢浮宫定时段票</li>
+<li>12月24日、25日、29日晚餐订位</li>
+<li>12月28日巴黎圣母院免费预约（想登塔再订登塔时段）</li>
+<li>12月29日晚备好退税单据与行李，12月30日 06:45 出发</li>
+</ol></div>
+
+<h2>实用贴士</h2>
+<div class="card"><ul class="tp">
+<li><b>机场交通：</b>戴高乐机场到市区走 RER B，约 40 分钟，也可坐 Roissybus 或打车。地铁 14 号线连的是奥利机场，不到戴高乐。出发前一天确认 RER B 当天是否正常运行。</li>
+<li><b>日照：</b>12月底日落约 16:55，白天很短，户外景点尽量排在下午四点前。</li>
+<li><b>节日营业：</b>12月24日傍晚起很多店铺和餐厅提早关门，12月25日市区大部分博物馆、商场和餐厅休息，晚餐都要提前订位。</li>
+<li><b>闭馆日：</b>卢浮宫周二闭馆，奥赛博物馆周一闭馆，先贤祠12月25日休息。各馆开放时间以官网当天公告为准。</li>
+<li><b>退税：</b>同一家店、同一天消费满 100.01 欧可办退税单。12月30日先在机场海关办理，再托运行李。</li>
+<li><b>防盗：</b>香榭丽舍、蒙马特和地铁里要看好包。有人主动上前要给你系腕绳，直接走开。</li>
+<li><b>餐厅礼仪：</b>别大声招手叫服务员，眼神对视并点头示意即可。进门先说 Bonjour，对方多半会切换成英语。</li>
+</ul></div>
+<footer>巴黎 2026 万新悦&amp;段昭丞 · 12月24日至30日</footer>
+</main>
+<script>
+const Z={'+01:00':'Europe/Paris','+02:00':'Europe/Helsinki'},E=encodeURIComponent;
+const P={cdg:[345,28,'戴高乐机场','Paris Charles de Gaulle Airport Terminal 2B'],disney:[360,150,'迪士尼','Disneyland Paris'],hotel:[215,155,'住宿（待定）','Châtelet-Les Halles, Paris'],vend:[165,126,'旺多姆广场','Place Vendôme, Paris'],champs:[95,112,'香榭丽舍','Avenue des Champs-Élysées, Paris'],troca:[68,160,'特罗卡德罗','Trocadéro, Paris'],eiffel:[78,188,'铁塔','Eiffel Tower, Paris'],inval:[122,192,'荣军院','Les Invalides, Paris'],arc:[58,95,'凯旋门','Arc de Triomphe, Paris'],louvre:[190,143,'卢浮宫','Louvre Museum, Paris'],opera:[176,110,'歌剧院','Palais Garnier, Paris'],galeries:[158,92,'老佛爷','Galeries Lafayette Haussmann, Paris'],nd:[228,176,'圣母院','Notre-Dame de Paris'],pantheon:[240,208,'先贤祠','Panthéon, Paris'],lux:[205,222,'卢森堡公园','Jardin du Luxembourg, Paris'],stgerm:[188,190,'圣日耳曼','Saint-Germain-des-Prés, Paris'],marais:[262,150,'马黑区','Marché des Enfants Rouges, Paris'],mont:[212,48,'圣心堂','Sacré-Cœur, Paris']};
+const D=[
+{d:'12-24',w:'周四',n:'抵达与平安夜灯光',c:'#E8A800',r:['cdg','hotel','vend','champs'],m:'transit',i:[
+['12:20','AY1575 赫尔辛基起飞','赫尔辛基-万塔机场，飞行约 3 小时 10 分','Helsinki Airport','k','+02:00'],
+['14:30','降落戴高乐机场 2B 航站楼','入境、取行李，预留约 1 小时','Paris Charles de Gaulle Airport Terminal 2B','k'],
+['15:30','乘 RER B 进城','在机场 2 号航站楼站上车，约 40 分钟；也可坐 Roissybus 或打车','Aéroport Charles de Gaulle 2 TGV, Roissy-en-France'],
+['16:45','酒店办理入住','酒店待订，建议在 Châtelet–Les Halles 一带','Châtelet-Les Halles, Paris'],
+['17:30','旺多姆广场 · 蒙田大道 · 香榭丽舍','天已黑，看各大品牌的圣诞橱窗与灯光','Place Vendôme, Paris'],
+['19:30','平安夜晚餐','很多餐厅当晚只供固定菜单','','b']]},
+{d:'12-25',w:'周五',n:'圣诞节 · 巴黎迪士尼',c:'#D6409F',r:['hotel','disney'],m:'transit',i:[
+['08:30','乘 RER A 前往迪士尼','往 Marne-la-Vallée–Chessy 方向，约 40 分钟；节日班次以当天为准','Marne-la-Vallée - Chessy, France'],
+['09:30','巴黎迪士尼乐园','圣诞限定巡游与装饰；开闭园时间、烟花场次以官网当天为准','Disneyland Paris','bk'],
+['晚','烟花后乘 RER A 返回','出发前查一下末班车时间',''],
+['晚','酒店附近晚餐','圣诞日市区很多餐厅休息','','b']]},
+{d:'12-26',w:'周六',n:'铁塔、凯旋门与塞纳河夜游',c:'#E4572E',r:['troca','eiffel','inval','arc'],m:'walking',i:[
+['09:00','特罗卡德罗广场','越早人越少，拍铁塔的机位','Trocadéro, Paris','k'],
+['09:30','埃菲尔铁塔','登顶或二层定时段票；安检预留 10–20 分钟','Eiffel Tower, Paris','bk'],
+['12:30','午餐：格勒纳勒街一带','避开铁塔周围的餐厅','Rue de Grenelle, Paris'],
+['13:30','荣军院 · 拿破仑墓','圆顶教堂和拿破仑墓，约 1.5–2 小时','Les Invalides, Paris'],
+['15:30','凯旋门登顶（284 级台阶）','日落约 16:55，建议提前订时段票','Arc de Triomphe, Paris','bk'],
+['17:15','香榭丽舍大街夜景','注意防盗','Avenue des Champs-Élysées, Paris'],
+['19:00','塞纳河游船（约 1 小时）','需订票；整点铁塔闪烁 5 分钟','Port de la Bourdonnais, Paris','bk']]},
+{d:'12-27',w:'周日',n:'卢浮宫与老佛爷',c:'#1F6FD0',r:['louvre','opera','galeries'],m:'walking',i:[
+['09:30','卢浮宫','需订定时段票；从 Richelieu 通道或卡鲁塞尔入口进，避开金字塔前的长队。重点：蒙娜丽莎、断臂维纳斯、胜利女神像','Louvre Museum, Paris','bk'],
+['13:00','午餐','杜乐丽花园或歌剧院方向',''],
+['14:00','巴黎歌剧院参观','白天参观，入场一般 17:00 前截止，以官网为准','Palais Garnier, Paris'],
+['15:00','老佛爷百货','周日营业；退税需同店同日满 100.01 欧，折扣活动以官网当期为准','Galeries Lafayette Haussmann, Paris'],
+['16:30','老佛爷顶楼天台','免费，日落约 16:55，可看到铁塔','Galeries Lafayette Haussmann, Paris']]},
+{d:'12-28',w:'周一',n:'圣母院、拉丁区与左岸',c:'#3E9B4F',r:['nd','pantheon','lux','stgerm'],m:'walking',i:[
+['09:00','巴黎圣母院','内部免费，建议在官网预约；登塔另订时段','Notre-Dame de Paris','bk'],
+['10:30','莎士比亚书店','停留 20–30 分钟','Shakespeare and Company, Paris'],
+['12:00','午餐：拉丁区','Bouillon Racine 或 Polidor，避开河边第一排','Bouillon Racine, Paris','b'],
+['13:30','先贤祠','主厅、傅科摆和地下墓室','Panthéon, Paris'],
+['15:15','卢森堡公园','冬季天黑早，16:30 前后光线最好','Jardin du Luxembourg, Paris'],
+['17:00','圣日耳曼街区晚餐','往主干道后面一两条街找小馆子','Saint-Germain-des-Prés, Paris']]},
+{d:'12-29',w:'周二',n:'马黑区与蒙马特日落',c:'#8A5CC9',r:['marais','mont'],m:'transit',i:[
+['10:00','恩凡鲁日市场','周二开放，可以吃生蚝','Marché des Enfants Rouges, Paris','k'],
+['11:30','Merci 买手店','90 年代复古小物，周边有古着店','Merci, Boulevard Beaumarchais, Paris'],
+['13:30','卡纳瓦莱博物馆','免费常设展，讲巴黎的历史；周一闭馆，周二开放','Musée Carnavalet, Paris'],
+['15:30','蒙马特高地 · 圣心堂','日落约 17:00；有人主动上前送腕绳，直接走开','Sacré-Cœur, Paris'],
+['18:30','告别晚餐','法式小酒馆','','b'],
+['晚','整理行李','备好退税单据，明早 06:45 出发','']]},
+{d:'12-30',w:'周三',n:'返程',c:'#64748B',r:['hotel','cdg'],m:'transit',i:[
+['06:45','从酒店出发','乘 RER B 去戴高乐机场，约 40 分钟；前一晚确认 RER B 运行','Aéroport Charles de Gaulle 2 TGV, Roissy-en-France','k'],
+['08:00','抵达 2B 航站楼','先办退税，再托运行李','Paris Charles de Gaulle Airport Terminal 2B'],
+['10:35','AY1572 巴黎起飞','赫尔辛基 14:30 降落（赫尔辛基时间）','Paris Charles de Gaulle Airport Terminal 2B','k']]}];
+const EV=[];
+D.forEach(x=>x.i.forEach(t=>{if(/^\d/.test(t[0])&&(t[4]||'').includes('k')){const z=t[5]||'+01:00';EV.push({ms:Date.parse('2026-'+x.d+'T'+t[0]+':00'+z),t:t[1],z:Z[z]})}}));
+EV.sort((a,b)=>a.ms-b.ms);
+const $=i=>document.getElementById(i),LZ=Intl.DateTimeFormat().resolvedOptions().timeZone;
+const F=(ms,tz)=>new Intl.DateTimeFormat('zh-CN',{timeZone:tz,month:'long',day:'numeric',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false,timeZoneName:'short'}).format(ms);
+function tick(){const n=Date.now(),e=EV.find(x=>x.ms>n);
+if(!e){$('nt').textContent='旅程圆满结束';$('nw').textContent='';$('cd').innerHTML='';$('nl').textContent='';return}
+const s=Math.floor((e.ms-n)/1e3),v=[Math.floor(s/86400),Math.floor(s%86400/3600),Math.floor(s%3600/60),s%60];
+$('nt').textContent=(n<EV[0].ms?'即将出发 · ':'下一站 · ')+e.t;
+$('nw').textContent=F(e.ms,e.z);
+$('nl').textContent=LZ!==e.z?'你当前时区（'+LZ+'）：'+F(e.ms,LZ):'';
+$('cd').innerHTML=v.map((x,i)=>'<div><b>'+String(x).padStart(2,'0')+'</b><span>'+'天时分秒'[i]+'</span></div>').join('')}
+setInterval(tick,1000);tick();
+function mp(a){let s='<svg viewBox="0 0 380 250" class="map" role="img" aria-label="路线示意图"><g filter="url(#rough)"><path d="M10,205 C40,195 60,175 80,172 C110,168 130,166 160,166 C190,168 210,172 235,178 C265,186 300,200 370,215" fill="none" stroke="var(--seine)" stroke-width="13" stroke-linecap="round"/><ellipse cx="226" cy="173" rx="14" ry="5" fill="var(--paper)" stroke="var(--seine)"/>';
+D.forEach((x,i)=>{const on=a==null||a==i;s+='<polyline points="'+x.r.map(k=>P[k][0]+','+P[k][1]).join(' ')+'" fill="none" stroke="'+x.c+'" stroke-width="'+(a==i?4.5:3)+'" stroke-linecap="round" stroke-linejoin="round"'+(i==1?' stroke-dasharray="7 6"':'')+' opacity="'+(on?1:.12)+'"/>'});
+s+='</g><text x="290" y="228" style="font-style:italic;fill:var(--mut)">塞纳河</text>';
+const ids=a==null?Object.keys(P):D[a].r;
+ids.forEach(k=>{const p=P[k],r=a==null||D[a].r.includes(k);const h=k=='hotel';s+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="'+(h?7:3.5)+'" fill="'+(h?'none':'var(--ink)')+'" stroke="var(--ink)" stroke-width="1.5"'+(h?' stroke-dasharray="3 2"':'')+'/><text x="'+(p[0]>300?p[0]-6:p[0]+7)+'" y="'+(p[1]-5)+'"'+(p[0]>300?' text-anchor="end"':'')+'>'+p[2]+'</text>'});
+return s+'</svg>'}
+const ro=(i,x)=>'<span class="ro" style="background:'+x.c+(i==0?';color:#222':'')+'">'+(i+1)+'</span>';
+$('ov').innerHTML=mp(null);
+$('lg').innerHTML=D.map((x,i)=>'<span>'+ro(i,x)+x.d.replace('-','/')+'</span>').join('');
+const nav=q=>'https://www.google.com/maps/dir/?api=1&destination='+E(q);
+$('days').innerHTML=D.map((x,i)=>{const q=x.r.map(k=>P[k][3]),mid=q.slice(1,-1).map(E).join('%7C');
+const u='https://www.google.com/maps/dir/?api=1&origin='+E(q[0])+'&destination='+E(q[q.length-1])+(mid?'&waypoints='+mid:'')+'&travelmode='+x.m;
+return '<div class="day" style="--c:'+x.c+'"><h3>'+ro(i,x)+x.d.replace('-','月')+'日 '+x.w+' · '+x.n+'</h3>'+
+'<details class="m"><summary>展开当日路线地图</summary>'+mp(i)+'<a class="nav" href="'+u+'" target="_blank" rel="noopener">全天路线一键导航</a></details><div class="tl">'+
+x.i.map(t=>{const z=t[5]||'+01:00',tm=/^\d/.test(t[0]);return '<div class="it"><div class="t">'+t[0]+(tm?'<small>'+(z=='+02:00'?'赫尔辛基 UTC+2':'巴黎 UTC+1')+'</small>':'')+'</div><div><b>'+(t[3]?'<a href="'+nav(t[3])+'" target="_blank" rel="noopener">'+t[1]+'</a>':t[1])+'</b>'+((t[4]||'').includes('b')?'<span class="tag">需预订</span>':'')+(t[2]?'<p>'+t[2]+'</p>':'')+'</div></div>'}).join('')+'</div></div>'}).join('');
+if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>
+</body>
+</html>
