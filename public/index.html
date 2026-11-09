@@ -45,8 +45,9 @@ details.m summary{cursor:pointer;font-size:14px;color:var(--acc);padding:6px 0}
 .t small{display:block;font:11px/1.3 system-ui,"PingFang SC",sans-serif;color:var(--mut)}
 .it b{font-weight:600}
 .it p{margin:2px 0 0;font-size:13.5px;color:var(--mut)}
+.tag.ok{background:#2e9e5b22;color:#1f7a44}
 .tag{display:inline-block;margin-left:6px;padding:0 7px;border-radius:999px;background:#d6409f22;color:#c03088;font-size:12px;vertical-align:1px}
-@media(prefers-color-scheme:dark){.tag{color:#ff8fcf}}
+@media(prefers-color-scheme:dark){.tag{color:#ff8fcf}.tag.ok{color:#6fdc9a}}
 ol.td,ul.tp{margin:0;padding-left:22px}
 ol.td li,ul.tp li{margin:6px 0}
 footer{margin-top:30px;text-align:center;font-size:12px;color:var(--mut)}
@@ -77,7 +78,14 @@ footer{margin-top:30px;text-align:center;font-size:12px;color:var(--mut)}
 <div class="row"><span>12月30日（周三）</span><span>戴高乐机场 2B 10:35 起飞</span></div>
 <div class="row"><span>降落 14:30（赫尔辛基时间）</span><span>赫尔辛基-万塔机场</span></div>
 <p class="mut" style="margin:6px 0 0;font-size:13px">建议 08:00 前到达 2B 航站楼，先办退税再托运。</p></div>
-<div class="card mut" style="font-size:14px">酒店、门票、游船等尚未预订，进度见下方待办清单。</div>
+<div class="card"><h4>埃菲尔铁塔 · 顶层电梯票含香槟</h4>
+<div class="row"><span>12月26日（周六）15:30 场次</span><span>成人 2 张</span></div>
+<div class="row"><span>顶层香槟 2 杯</span><span>艾尔梅马卡龙 1 盒（8 个）</span></div>
+<p class="mut" style="margin:6px 0 0;font-size:13px">Champ de Mars, 5 Avenue Anatole France, 75007 Paris · 电话 +33 9 69 36 27 07（周一至周六 9:30–18:00）· <a href="https://www.google.com/maps/dir/?api=1&destination=Eiffel%20Tower%2C%20Paris">导航</a><br>票为实名，不可转让、不可退改。</p></div>
+<div class="card"><h4>凯旋门 · 登顶（含讲解）</h4>
+<div class="row"><span>12月28日（周一）11:00 场次</span><span>284 级台阶</span></div>
+<p class="mut" style="margin:6px 0 0;font-size:13px">Place Charles de Gaulle, 75008 Paris · <a href="https://www.google.com/maps/dir/?api=1&destination=Arc%20de%20Triomphe%2C%20Paris">导航</a></p></div>
+<div class="card mut" style="font-size:14px">酒店、迪士尼、卢浮宫、游船等尚未预订，进度见下方待办清单。</div>
 </div>
 
 <h2>逐日行程</h2>
@@ -88,8 +96,6 @@ footer{margin-top:30px;text-align:center;font-size:12px;color:var(--mut)}
 <div class="card"><ol class="td">
 <li>订酒店，建议 Châtelet–Les Halles 一带，选可免费取消的房型</li>
 <li>12月25日迪士尼带日期门票（先看当天是否有票，再决定一个园还是两个园）</li>
-<li>12月26日埃菲尔铁塔登顶或二层定时段票</li>
-<li>12月26日凯旋门登顶时段票</li>
 <li>12月26日晚塞纳河游船票</li>
 <li>12月27日卢浮宫定时段票</li>
 <li>12月24日、25日、29日晚餐订位</li>
@@ -102,6 +108,8 @@ footer{margin-top:30px;text-align:center;font-size:12px;color:var(--mut)}
 <li><b>机场交通：</b>戴高乐机场到市区走 RER B，约 40 分钟，也可坐 Roissybus 或打车。地铁 14 号线连的是奥利机场，不到戴高乐。出发前一天确认 RER B 当天是否正常运行。</li>
 <li><b>日照：</b>12月底日落约 16:55，白天很短，户外景点尽量排在下午四点前。</li>
 <li><b>节日营业：</b>12月24日傍晚起很多店铺和餐厅提早关门，12月25日市区大部分博物馆、商场和餐厅休息，晚餐都要提前订位。</li>
+<li><b>12月26日铁塔：</b>票按 15:30 场次计时，建议 15:00 到花园入口排队。风大或起雾时顶层可能关闭，会在二层东侧柜台换成替代项目。铁塔不提供行李寄存，别带大件行李。</li>
+<li><b>12月28日凯旋门：</b>从香榭丽舍一侧的地下通道过去，不要横穿环岛。</li>
 <li><b>闭馆日：</b>卢浮宫周二闭馆，奥赛博物馆周一闭馆，先贤祠12月25日休息。各馆开放时间以官网当天公告为准。</li>
 <li><b>退税：</b>同一家店、同一天消费满 100.01 欧可办退税单。12月30日先在机场海关办理，再托运行李。</li>
 <li><b>防盗：</b>香榭丽舍、蒙马特和地铁里要看好包。有人主动上前要给你系腕绳，直接走开。</li>
@@ -111,7 +119,7 @@ footer{margin-top:30px;text-align:center;font-size:12px;color:var(--mut)}
 </main>
 <script>
 const Z={'+01:00':'Europe/Paris','+02:00':'Europe/Helsinki'},E=encodeURIComponent;
-const P={cdg:[345,28,'戴高乐机场','Paris Charles de Gaulle Airport Terminal 2B'],disney:[360,150,'迪士尼','Disneyland Paris'],hotel:[215,155,'住宿（待定）','Châtelet-Les Halles, Paris'],vend:[165,126,'旺多姆广场','Place Vendôme, Paris'],champs:[95,112,'香榭丽舍','Avenue des Champs-Élysées, Paris'],troca:[68,160,'特罗卡德罗','Trocadéro, Paris'],eiffel:[78,188,'铁塔','Eiffel Tower, Paris'],inval:[122,192,'荣军院','Les Invalides, Paris'],arc:[58,95,'凯旋门','Arc de Triomphe, Paris'],louvre:[190,143,'卢浮宫','Louvre Museum, Paris'],opera:[176,110,'歌剧院','Palais Garnier, Paris'],galeries:[158,92,'老佛爷','Galeries Lafayette Haussmann, Paris'],nd:[228,176,'圣母院','Notre-Dame de Paris'],pantheon:[240,208,'先贤祠','Panthéon, Paris'],lux:[205,222,'卢森堡公园','Jardin du Luxembourg, Paris'],stgerm:[188,190,'圣日耳曼','Saint-Germain-des-Prés, Paris'],marais:[262,150,'马黑区','Marché des Enfants Rouges, Paris'],mont:[212,48,'圣心堂','Sacré-Cœur, Paris']};
+const P={cdg:[345,28,'戴高乐机场','Paris Charles de Gaulle Airport Terminal 2B'],disney:[360,150,'迪士尼','Disneyland Paris'],hotel:[215,155,'住宿（待定）','Châtelet-Les Halles, Paris'],vend:[165,126,'旺多姆广场','Place Vendôme, Paris'],champs:[95,112,'香榭丽舍','Avenue des Champs-Élysées, Paris'],troca:[68,160,'特罗卡德罗','Trocadéro, Paris'],eiffel:[78,188,'铁塔','Eiffel Tower, Paris'],inval:[122,192,'荣军院','Les Invalides, Paris'],arc:[58,95,'凯旋门','Arc de Triomphe, Paris'],louvre:[190,143,'卢浮宫','Louvre Museum, Paris'],opera:[176,110,'歌剧院','Palais Garnier, Paris'],galeries:[158,92,'老佛爷','Galeries Lafayette Haussmann, Paris'],nd:[228,176,'圣母院','Notre-Dame de Paris'],pantheon:[240,208,'先贤祠','Panthéon, Paris'],stgerm:[188,190,'圣日耳曼','Saint-Germain-des-Prés, Paris'],marais:[262,150,'马黑区','Marché des Enfants Rouges, Paris'],mont:[212,48,'圣心堂','Sacré-Cœur, Paris']};
 const D=[
 {d:'12-24',w:'周四',n:'抵达与平安夜灯光',c:'#E8A800',r:['cdg','hotel','vend','champs'],m:'transit',i:[
 ['12:20','AY1575 赫尔辛基起飞','赫尔辛基-万塔机场，飞行约 3 小时 10 分','Helsinki Airport','k','+02:00'],
@@ -125,27 +133,31 @@ const D=[
 ['09:30','巴黎迪士尼乐园','圣诞限定巡游与装饰；开闭园时间、烟花场次以官网当天为准','Disneyland Paris','bk'],
 ['晚','烟花后乘 RER A 返回','出发前查一下末班车时间',''],
 ['晚','酒店附近晚餐','圣诞日市区很多餐厅休息','','b']]},
-{d:'12-26',w:'周六',n:'铁塔、凯旋门与塞纳河夜游',c:'#E4572E',r:['troca','eiffel','inval','arc'],m:'walking',i:[
-['09:00','特罗卡德罗广场','越早人越少，拍铁塔的机位','Trocadéro, Paris','k'],
-['09:30','埃菲尔铁塔','登顶或二层定时段票；安检预留 10–20 分钟','Eiffel Tower, Paris','bk'],
-['12:30','午餐：格勒纳勒街一带','避开铁塔周围的餐厅','Rue de Grenelle, Paris'],
-['13:30','荣军院 · 拿破仑墓','圆顶教堂和拿破仑墓，约 1.5–2 小时','Les Invalides, Paris'],
-['15:30','凯旋门登顶（284 级台阶）','日落约 16:55，建议提前订时段票','Arc de Triomphe, Paris','bk'],
-['17:15','香榭丽舍大街夜景','注意防盗','Avenue des Champs-Élysées, Paris'],
-['19:00','塞纳河游船（约 1 小时）','需订票；整点铁塔闪烁 5 分钟','Port de la Bourdonnais, Paris','bk']]},
+{d:'12-26',w:'周六',n:'铁塔日落香槟与塞纳河夜游',c:'#E4572E',r:['inval','eiffel','troca'],m:'walking',i:[
+['10:00','荣军院 · 拿破仑墓','圆顶教堂和拿破仑墓，约 1.5–2 小时；开放时间以官网为准','Les Invalides, Paris'],
+['12:30','午餐：Rue Cler 或格勒纳勒街一带','避开铁塔周围的餐厅','Rue Cler, Paris'],
+['14:00','战神广场散步','铁塔的入口在花园里，先熟悉一下位置','Champ de Mars, Paris'],
+['15:00','到铁塔入口排队安检','走标有“Visitors with tickets”的入口，预留 15–20 分钟；迟到不保证放行','Eiffel Tower, Paris','k'],
+['15:30','埃菲尔铁塔顶层（电梯）· 含香槟','顶层吧台凭二维码和年龄证件各领一杯香槟；日落约 16:55','Eiffel Tower, Paris','ko'],
+['17:15','二层下层领皮埃尔·艾尔梅马卡龙','在 Macaron Bar 出示二维码领 8 个，要在下塔前去','Eiffel Tower, Paris'],
+['18:00','特罗卡德罗广场看铁塔夜景','整点铁塔闪烁 5 分钟','Trocadéro, Paris'],
+['19:00','塞纳河游船（约 1 小时）','需订票；乘船处离铁塔很近','Port de la Bourdonnais, Paris','bk'],
+['20:30','晚餐','','','b']]},
 {d:'12-27',w:'周日',n:'卢浮宫与老佛爷',c:'#1F6FD0',r:['louvre','opera','galeries'],m:'walking',i:[
 ['09:30','卢浮宫','需订定时段票；从 Richelieu 通道或卡鲁塞尔入口进，避开金字塔前的长队。重点：蒙娜丽莎、断臂维纳斯、胜利女神像','Louvre Museum, Paris','bk'],
 ['13:00','午餐','杜乐丽花园或歌剧院方向',''],
 ['14:00','巴黎歌剧院参观','白天参观，入场一般 17:00 前截止，以官网为准','Palais Garnier, Paris'],
 ['15:00','老佛爷百货','周日营业；退税需同店同日满 100.01 欧，折扣活动以官网当期为准','Galeries Lafayette Haussmann, Paris'],
 ['16:30','老佛爷顶楼天台','免费，日落约 16:55，可看到铁塔','Galeries Lafayette Haussmann, Paris']]},
-{d:'12-28',w:'周一',n:'圣母院、拉丁区与左岸',c:'#3E9B4F',r:['nd','pantheon','lux','stgerm'],m:'walking',i:[
-['09:00','巴黎圣母院','内部免费，建议在官网预约；登塔另订时段','Notre-Dame de Paris','bk'],
-['10:30','莎士比亚书店','停留 20–30 分钟','Shakespeare and Company, Paris'],
-['12:00','午餐：拉丁区','Bouillon Racine 或 Polidor，避开河边第一排','Bouillon Racine, Paris','b'],
-['13:30','先贤祠','主厅、傅科摆和地下墓室','Panthéon, Paris'],
-['15:15','卢森堡公园','冬季天黑早，16:30 前后光线最好','Jardin du Luxembourg, Paris'],
-['17:00','圣日耳曼街区晚餐','往主干道后面一两条街找小馆子','Saint-Germain-des-Prés, Paris']]},
+{d:'12-28',w:'周一',n:'凯旋门、圣母院与左岸',c:'#3E9B4F',r:['arc','nd','pantheon','stgerm'],m:'transit',i:[
+['10:30','抵达凯旋门','走香榭丽舍一侧的地下通道进入，不要横穿环岛；预留安检时间','Arc de Triomphe, Paris'],
+['11:00','凯旋门登顶（含讲解）','284 级台阶，按已订的 11:00 场次','Arc de Triomphe, Paris','ko'],
+['12:30','午餐','香榭丽舍附近，避开主干道第一排',''],
+['14:00','前往西岱岛','地铁 1 号线到 Châtelet 再步行，或打车',''],
+['14:45','巴黎圣母院','内部免费，建议在官网预约','Notre-Dame de Paris','b'],
+['15:45','莎士比亚书店','停留 20–30 分钟','Shakespeare and Company, Paris'],
+['16:30','先贤祠','主厅、傅科摆和地下墓室；末次入场时间以官网为准','Panthéon, Paris'],
+['18:30','圣日耳曼街区晚餐','往主干道后面一两条街找小馆子','Saint-Germain-des-Prés, Paris']]},
 {d:'12-29',w:'周二',n:'马黑区与蒙马特日落',c:'#8A5CC9',r:['marais','mont'],m:'transit',i:[
 ['10:00','恩凡鲁日市场','周二开放，可以吃生蚝','Marché des Enfants Rouges, Paris','k'],
 ['11:30','Merci 买手店','90 年代复古小物，周边有古着店','Merci, Boulevard Beaumarchais, Paris'],
@@ -184,7 +196,7 @@ $('days').innerHTML=D.map((x,i)=>{const q=x.r.map(k=>P[k][3]),mid=q.slice(1,-1).
 const u='https://www.google.com/maps/dir/?api=1&origin='+E(q[0])+'&destination='+E(q[q.length-1])+(mid?'&waypoints='+mid:'')+'&travelmode='+x.m;
 return '<div class="day" style="--c:'+x.c+'"><h3>'+ro(i,x)+x.d.replace('-','月')+'日 '+x.w+' · '+x.n+'</h3>'+
 '<details class="m"><summary>展开当日路线地图</summary>'+mp(i)+'<a class="nav" href="'+u+'" target="_blank" rel="noopener">全天路线一键导航</a></details><div class="tl">'+
-x.i.map(t=>{const z=t[5]||'+01:00',tm=/^\d/.test(t[0]);return '<div class="it"><div class="t">'+t[0]+(tm?'<small>'+(z=='+02:00'?'赫尔辛基 UTC+2':'巴黎 UTC+1')+'</small>':'')+'</div><div><b>'+(t[3]?'<a href="'+nav(t[3])+'" target="_blank" rel="noopener">'+t[1]+'</a>':t[1])+'</b>'+((t[4]||'').includes('b')?'<span class="tag">需预订</span>':'')+(t[2]?'<p>'+t[2]+'</p>':'')+'</div></div>'}).join('')+'</div></div>'}).join('');
+x.i.map(t=>{const z=t[5]||'+01:00',tm=/^\d/.test(t[0]);return '<div class="it"><div class="t">'+t[0]+(tm?'<small>'+(z=='+02:00'?'赫尔辛基 UTC+2':'巴黎 UTC+1')+'</small>':'')+'</div><div><b>'+(t[3]?'<a href="'+nav(t[3])+'" target="_blank" rel="noopener">'+t[1]+'</a>':t[1])+'</b>'+((t[4]||'').includes('b')?'<span class="tag">需预订</span>':'')+((t[4]||'').includes('o')?'<span class="tag ok">已预订</span>':'')+(t[2]?'<p>'+t[2]+'</p>':'')+'</div></div>'}).join('')+'</div></div>'}).join('');
 if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
 </script>
 </body>
