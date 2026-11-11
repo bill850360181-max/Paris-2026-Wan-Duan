@@ -85,7 +85,7 @@ footer{margin-top:30px;text-align:center;font-size:12px;color:var(--mut)}
 <div class="card"><h4>凯旋门 · 登顶（含讲解）</h4>
 <div class="row"><span>12月28日（周一）11:00 场次</span><span>284 级台阶</span></div>
 <p class="mut" style="margin:6px 0 0;font-size:13px">Place Charles de Gaulle, 75008 Paris · <a href="https://www.google.com/maps/dir/?api=1&destination=Arc%20de%20Triomphe%2C%20Paris">导航</a></p></div>
-<div class="card mut" style="font-size:14px">酒店、迪士尼、卢浮宫、游船等尚未预订，进度见下方待办清单。</div>
+<div class="card mut" style="font-size:14px">酒店、迪士尼、奥赛、卢浮宫、游船等尚未预订，进度见下方待办清单。</div>
 </div>
 
 <h2>逐日行程</h2>
@@ -97,6 +97,7 @@ footer{margin-top:30px;text-align:center;font-size:12px;color:var(--mut)}
 <li>订酒店，建议 Châtelet–Les Halles 一带，选可免费取消的房型</li>
 <li>12月25日迪士尼带日期门票（先看当天是否有票，再决定一个园还是两个园）</li>
 <li>12月26日晚塞纳河游船票</li>
+<li>12月26日 9:30 奥赛博物馆定时段票</li>
 <li>12月27日卢浮宫定时段票</li>
 <li>12月24日、25日、29日晚餐订位</li>
 <li>12月28日巴黎圣母院免费预约（想登塔再订登塔时段）</li>
@@ -119,7 +120,7 @@ footer{margin-top:30px;text-align:center;font-size:12px;color:var(--mut)}
 </main>
 <script>
 const Z={'+01:00':'Europe/Paris','+02:00':'Europe/Helsinki'},E=encodeURIComponent;
-const P={cdg:[345,28,'戴高乐机场','Paris Charles de Gaulle Airport Terminal 2B'],disney:[360,150,'迪士尼','Disneyland Paris'],hotel:[215,155,'住宿（待定）','Châtelet-Les Halles, Paris'],vend:[165,126,'旺多姆广场','Place Vendôme, Paris'],champs:[95,112,'香榭丽舍','Avenue des Champs-Élysées, Paris'],troca:[68,160,'特罗卡德罗','Trocadéro, Paris'],eiffel:[78,188,'铁塔','Eiffel Tower, Paris'],inval:[122,192,'荣军院','Les Invalides, Paris'],arc:[58,95,'凯旋门','Arc de Triomphe, Paris'],louvre:[190,143,'卢浮宫','Louvre Museum, Paris'],opera:[176,110,'歌剧院','Palais Garnier, Paris'],galeries:[158,92,'老佛爷','Galeries Lafayette Haussmann, Paris'],nd:[228,176,'圣母院','Notre-Dame de Paris'],pantheon:[240,208,'先贤祠','Panthéon, Paris'],stgerm:[188,190,'圣日耳曼','Saint-Germain-des-Prés, Paris'],marais:[262,150,'马黑区','Marché des Enfants Rouges, Paris'],mont:[212,48,'圣心堂','Sacré-Cœur, Paris']};
+const P={cdg:[345,28,'戴高乐机场','Paris Charles de Gaulle Airport Terminal 2B'],disney:[360,150,'迪士尼','Disneyland Paris'],hotel:[215,155,'住宿（待定）','Châtelet-Les Halles, Paris'],vend:[165,126,'旺多姆广场','Place Vendôme, Paris'],champs:[95,112,'香榭丽舍','Avenue des Champs-Élysées, Paris'],troca:[68,160,'特罗卡德罗','Trocadéro, Paris'],eiffel:[78,188,'铁塔','Eiffel Tower, Paris'],inval:[122,192,'荣军院','Les Invalides, Paris'],orsay:[152,176,'奥赛博物馆','Musée d’Orsay, Paris'],arc:[58,95,'凯旋门','Arc de Triomphe, Paris'],louvre:[190,143,'卢浮宫','Louvre Museum, Paris'],opera:[176,110,'歌剧院','Palais Garnier, Paris'],galeries:[158,92,'老佛爷','Galeries Lafayette Haussmann, Paris'],nd:[228,176,'圣母院','Notre-Dame de Paris'],pantheon:[240,208,'先贤祠','Panthéon, Paris'],stgerm:[188,190,'圣日耳曼','Saint-Germain-des-Prés, Paris'],marais:[262,150,'马黑区','Marché des Enfants Rouges, Paris'],mont:[212,48,'圣心堂','Sacré-Cœur, Paris']};
 const D=[
 {d:'12-24',w:'周四',n:'抵达与平安夜灯光',c:'#E8A800',r:['cdg','hotel','vend','champs'],m:'transit',i:[
 ['12:20','AY1575 赫尔辛基起飞','赫尔辛基-万塔机场，飞行约 3 小时 10 分','Helsinki Airport','k','+02:00'],
@@ -133,10 +134,11 @@ const D=[
 ['09:30','巴黎迪士尼乐园','圣诞限定巡游与装饰；开闭园时间、烟花场次以官网当天为准','Disneyland Paris','bk'],
 ['晚','烟花后乘 RER A 返回','出发前查一下末班车时间',''],
 ['晚','酒店附近晚餐','圣诞日市区很多餐厅休息','','b']]},
-{d:'12-26',w:'周六',n:'铁塔日落香槟与塞纳河夜游',c:'#E4572E',r:['inval','eiffel','troca'],m:'walking',i:[
-['10:00','荣军院 · 拿破仑墓','圆顶教堂和拿破仑墓，约 1.5–2 小时；开放时间以官网为准','Les Invalides, Paris'],
-['12:30','午餐：Rue Cler 或格勒纳勒街一带','避开铁塔周围的餐厅','Rue Cler, Paris'],
-['14:00','战神广场散步','铁塔的入口在花园里，先熟悉一下位置','Champ de Mars, Paris'],
+{d:'12-26',w:'周六',n:'奥赛、铁塔日落香槟与塞纳河夜游',c:'#E4572E',r:['orsay','inval','eiffel','troca'],m:'walking',i:[
+['09:30','奥赛博物馆','印象派收藏，约 2 小时；需订定时段票；周一闭馆，周六开放','Musée d’Orsay, Paris','bk'],
+['12:00','午餐：Rue de Grenelle 一带','靠近荣军院，避开铁塔周围的餐厅','Rue de Grenelle, Paris'],
+['13:15','荣军院 · 拿破仑墓','时间紧就只看圆顶外观和拿破仑墓，约 1 小时；开放时间以官网为准','Les Invalides, Paris'],
+['14:30','前往铁塔','步行约 25 分钟，也可打车',''],
 ['15:00','到铁塔入口排队安检','走标有“Visitors with tickets”的入口，预留 15–20 分钟；迟到不保证放行','Eiffel Tower, Paris','k'],
 ['15:30','埃菲尔铁塔顶层（电梯）· 含香槟','顶层吧台凭二维码和年龄证件各领一杯香槟；日落约 16:55','Eiffel Tower, Paris','ko'],
 ['17:15','二层下层领皮埃尔·艾尔梅马卡龙','在 Macaron Bar 出示二维码领 8 个，要在下塔前去','Eiffel Tower, Paris'],
